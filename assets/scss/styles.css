@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --primary-color: #e17426;
+  --secondary-color: #0d1e78;
+  --tertiary-color: #E9ECEF;
+  --success-color: #28a745;
+  --error-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --grey-color: #5D5D5D;
+  --background-color: #F9FAFB;
+  --primary-disabled-color: #E3E9F6;
+  --primary-hover-color: #4654AF;
+  --primary-active-color: #363E72;
+  --secondary-disabled-color: #F4E3D1;
+  --secondary-hover-color: #DDA26C;
+  --secondary-active-color: #D58448;
+  --loginForm-background-color: #F5F5F5;
+  --font-size-base: 1;
+  --font-size-lg: 1.25rem;
+  --font-size-md: 1rem;
+  --font-size-sm: 0.875rem;
+  --font-size-8: 0.5rem;
+  --font-size-9: 0.5625rem;
+  --font-size-10: 0.625rem;
+  --font-size-11: 0.688rem;
+  --font-size-12: 0.75rem;
+  --font-size-13: 0.813rem;
+  --font-size-14: 0.875rem;
+  --font-size-15: 0.938rem;
+  --font-size-16: 1rem;
+  --font-size-17: 1.063rem;
+  --font-size-18: 1.12rem;
+  --font-size-19: 1.18rem;
+  --font-size-20: 1.25rem;
+  --font-size-21: 1.31rem;
+  --font-size-22: 1.37rem;
+  --font-size-23: 1.43rem;
+  --font-size-24: 1.5rem;
+  --font-size-25: 1.563rem;
+  --font-size-26: 1.625rem;
+  --font-size-27: 1.688rem;
+  --font-size-28: 1.75rem;
+  --font-size-29: 1.813rem;
+  --font-size-30: 1.875rem;
+  --font-size-31: 1.938rem;
+  --font-size-32: 2rem;
+  --font-size-40: 2.5rem;
+  --font-size-48: 3rem;
+  --font-size-56: 3.5rem;
+  --border-radius: 0.25rem;
+  --border-width: 0.15rem;
+  --transition: all 0.2s ease-in-out;
+  --greenMain: #08272B;
+  --greenMain900: #194448;
+  --greenMain800: #185157;
+  --greenMain700: #175E64;
+  --greenMain600: #1A8087;
+  --greenMain500: #24A1A8;
+  --greenMain400: #3DC0C4;
+  --greenMain300: #6BDDDD;
+  --greenMain200: #A2EDEB;
+  --greenMain100: #D1F6F4;
+  --greenMain50: #F1FCFB;
+  --Secondary950: #450A0C;
+  --Secondary900: #7F1D20;
+  --Secondary800: #991B1F;
+  --Secondary700: #B81D22;
+  --Secondary600: #DB272D;
+  --Secondary500: #F0575C;
+  --Secondary400Base: #F77276;
+  --Secondary300: #FCA5A8;
+  --Secondary200: #FECACC;
+  --Secondary100: #FEE2E3;
+  --Secondary50: #FEF2F2;
+  --tertiary950: #212E30;
+  --tertiary900: #324548;
+  --tertiary800: #385154;
+  --tertiary700: #405F64;
+  --tertiary600: #4E777B;
+  --tertiary500: #639094;
+  --tertiary400Base: #82AAAE;
+  --tertiary300: #A0BFC2;
+  --tertiary200: #D4E2E3;
+  --tertiary100: #ECF1F2;
+  --tertiary50: #F6F9F9;
+  --Neutrals950: #000000;
+  --Neutrals900: #3D3D3D;
+  --Neutrals800: #454545;
+  --Neutrals700: #4F4F4F;
+  --Neutrals600: #5D5D5D;
+  --Neutrals500: #6D6D6D;
+  --Neutrals400: #888888;
+  --Neutrals300: #B0B0B0;
+  --Neutrals200: #D1D1D1;
+  --Neutrals100: #E7E7E7;
+  --Neutrals50: #F6F6F6;
+  --contactBanner: #fee2e3;
+  --font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --bs-progress-height: 0.51rem;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+:root {
+  --white-color: #fff;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #e17426;
+  --bs-btn-border-color: #e17426;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0b5ed7;
+  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #0a58ca;
+  --bs-btn-active-border-color: #0a53be;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #e17426;
+  --bs-btn-disabled-border-color: #e17426;
+  --section-bg: #efefff;
+  --body-font: "Catamaran", sans-serif;
+  --heading-font: "Jost", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  color: var(--body-color);
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.4s;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img, svg {
+  vertical-align: middle;
+}
+
+.catamaran-main {
+  font-family: var(--body-font);
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.jost-main {
+  font-family: var(--heading-font);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Hero Section Styles */
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  /* Adjust as needed */
+  color: white;
+  text-align: center;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adjust darkness */
+  z-index: 1;
+}
+
+/* Slider Styles */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  /* Adjust as needed */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide-content {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.btn-primary {
+  color: var(--bs-btn-color);
+  background-color: var(--bs-btn-bg);
+  border-color: var(--bs-btn-border-color);
+}
+.btn-primary:hover {
+  color: var(--bs-btn-hover-color);
+  background-color: var(--bs-btn-hover-bg);
+  border-color: var(--bs-btn-hover-border-color);
+}
+
+.servicesSections {
+  background-color: var(--section-bg);
+}
+.servicesSections .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+}
+.servicesSections .title h4 {
+  font-size: var(--font-size-20);
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: var(--heading-font);
+}
+.servicesSections .title h2 {
+  font-size: var(--font-size-40);
+  line-height: 44px !important;
+  font-family: var(--body-font);
+  margin-bottom: 15px;
+}
+.servicesSections .title h2 span {
+  color: var(--primary-color);
+}
+@media (max-width: 991px) {
+  .servicesSections .title h2 h2 {
+    font-size: var(--font-size-24) !important;
+    line-height: 34px !important;
+  }
+}
+
+.section-pad {
+  padding: 80px 0;
+}
+
+.aboutUsSection .aboutusimg {
+  position: relative;
+}
+.aboutUsSection .aboutusimg .aboutusimgtxt {
+  position: absolute;
+  top: 35%;
+  left: 18%;
+  transform: rotate(-90deg) translateY(-188px);
+  z-index: -1;
+}
+.aboutUsSection .aboutusimg .aboutusimgtxt h3 {
+  color: var(--secondary-color);
+  font-size: 100px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+.aboutUsSection .aboutusimg .aboutusimgtxt h3::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%; /* Ensure the pseudo-element has height */
+  transition: all 2s ease-out 0s;
+  animation: about-text 3s ease-in-out 1s forwards infinite alternate-reverse;
+}
+.aboutUsSection .aboutusimg img {
+  border-radius: 6px !important;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  width: 65%;
+  margin-left: 20%;
+}
+.aboutUsSection .aboutusimg .experienceBox {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+  padding: 15px 25px 15px;
+  background-color: var(--white-color);
+  box-shadow: 0px 30px 50px rgba(3, 4, 28, 0.1);
+  z-index: 99;
+  text-align: center;
+}
+.aboutUsSection .aboutusimg .experienceBox h4 {
+  font-size: 80px;
+  font-weight: 600;
+  background: var(--primary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  line-height: 1;
+  margin-bottom: 0;
+}
+.aboutUsSection .aboutusimg .experienceBox p {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--heading-font);
+}
+.aboutUsSection .content p.text {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.aboutusTitle h4 {
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  display: inline-block;
+  padding: 0px 80px;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+.aboutusTitle h4.subTitle {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: 1px solid var(--ct-border-color);
+  display: inline-flex;
+  padding: 8px 24px;
+  border-radius: 30px;
+  line-height: 24px;
+  background: rgba(226, 232, 240, 0.3019607843);
+  margin-bottom: 18px;
+}
+.aboutusTitle h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.marqueeSections .news-ticker {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 8px;
+  font-family: var(--body-font);
+  position: relative;
+}
+.marqueeSections .news-ticker .scroll {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content; /* Adjust to content width */
+  animation: ticker 40s linear infinite; /* Increased duration */
+}
+.marqueeSections .ticker-text {
+  display: inline-block;
+  padding-left: 100%;
+}
+.marqueeSections .ticker-text div {
+  font-weight: 900;
+  font-size: 4em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--headding-color);
+  /* background-color: var(--white-bg); */
+  will-change: transform;
+}
+.marqueeSections .ticker-text div span {
+  -webkit-text-stroke: 2px var(--primary-color);
+  color: var(--white-color);
+}
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.footer {
+  font-family: var(--heading-font);
+}
+.footer p {
+  color: var(--dark-color);
+}
+.footer h5 {
+  color: var(--dark-color);
+}
+.footer a {
+  color: var(--dark-color);
+  text-decoration: none;
+}/*# sourceMappingURL=styles.css.map */
