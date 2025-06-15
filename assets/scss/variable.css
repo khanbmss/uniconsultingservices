@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
-  --primary-color: #e17426;
+  --primary-color: #fea621;
   --secondary-color: #0d1e78;
   --tertiary-color: #E9ECEF;
   --success-color: #28a745;
@@ -55,39 +54,39 @@
   --border-radius: 0.25rem;
   --border-width: 0.15rem;
   --transition: all 0.2s ease-in-out;
-  --greenMain: #08272B;
-  --greenMain900: #194448;
-  --greenMain800: #185157;
-  --greenMain700: #175E64;
-  --greenMain600: #1A8087;
-  --greenMain500: #24A1A8;
-  --greenMain400: #3DC0C4;
-  --greenMain300: #6BDDDD;
-  --greenMain200: #A2EDEB;
-  --greenMain100: #D1F6F4;
-  --greenMain50: #F1FCFB;
-  --Secondary950: #450A0C;
-  --Secondary900: #7F1D20;
-  --Secondary800: #991B1F;
-  --Secondary700: #B81D22;
-  --Secondary600: #DB272D;
-  --Secondary500: #F0575C;
-  --Secondary400Base: #F77276;
-  --Secondary300: #FCA5A8;
-  --Secondary200: #FECACC;
-  --Secondary100: #FEE2E3;
-  --Secondary50: #FEF2F2;
-  --tertiary950: #212E30;
-  --tertiary900: #324548;
-  --tertiary800: #385154;
-  --tertiary700: #405F64;
-  --tertiary600: #4E777B;
-  --tertiary500: #639094;
-  --tertiary400Base: #82AAAE;
-  --tertiary300: #A0BFC2;
-  --tertiary200: #D4E2E3;
-  --tertiary100: #ECF1F2;
-  --tertiary50: #F6F9F9;
+  --color-web-orange-50: #fff9eb;
+  --color-web-orange-100: #ffecc6;
+  --color-web-orange-200: #ffd988;
+  --color-web-orange-300: #febf4b;
+  --color-web-orange-400: #fea621;
+  --color-web-orange-500: #f88208;
+  --color-web-orange-600: #dc5d03;
+  --color-web-orange-700: #b63e07;
+  --color-web-orange-800: #94300c;
+  --color-web-orange-900: #79280e;
+  --color-web-orange-950: #461202;
+  --color-trinidad-50: #fff7ec;
+  --color-trinidad-100: #ffedd3;
+  --color-trinidad-200: #ffd8a7;
+  --color-trinidad-300: #ffbb6f;
+  --color-trinidad-400: #ff9334;
+  --color-trinidad-500: #ff730d;
+  --color-trinidad-600: #e95403;
+  --color-trinidad-700: #c94005;
+  --color-trinidad-800: #9f320d;
+  --color-trinidad-900: #802c0e;
+  --color-trinidad-950: #451405;
+  --color-resolution-blue-50: #e8f4ff;
+  --color-resolution-blue-100: #d5eaff;
+  --color-resolution-blue-200: #b3d7ff;
+  --color-resolution-blue-300: #86bbff;
+  --color-resolution-blue-400: #578fff;
+  --color-resolution-blue-500: #3164ff;
+  --color-resolution-blue-600: #0e34ff;
+  --color-resolution-blue-700: #0428fe;
+  --color-resolution-blue-800: #0727cc;
+  --color-resolution-blue-900: #112b9e;
+  --color-resolution-blue-950: #0d1e78;
   --Neutrals950: #000000;
   --Neutrals900: #3D3D3D;
   --Neutrals800: #454545;
@@ -100,114 +99,5 @@
   --Neutrals100: #E7E7E7;
   --Neutrals50: #F6F6F6;
   --contactBanner: #fee2e3;
-  --font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --bs-progress-height: 0.51rem;
-}
-
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.poppins-extralight {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
 }/*# sourceMappingURL=variable.css.map */

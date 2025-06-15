@@ -1,0 +1,65 @@
+:root {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #fea621;
+  --bs-btn-border-color: #febf4b;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #f88208;
+  --bs-btn-hover-border-color: #febf4b;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #f88208;
+  --bs-btn-active-border-color: #dc5d03;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #fff9eb;
+  --bs-btn-disabled-border-color: #ffecc6;
+}
+
+.btn-primaryUNI {
+  color: var(--bs-btn-color) !important;
+  background-color: var(--bs-btn-bg) !important;
+  border-color: var(--bs-btn-border-color) !important;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+}
+.btn-primaryUNI:hover {
+  color: var(--bs-btn-hover-color) !important;
+  background-color: var(--bs-btn-hover-bg) !important;
+  border-color: var(--bs-btn-hover-border-color) !important;
+}
+.btn-primaryUNI:active, .btn-primaryUNI.active {
+  color: var(--bs-btn-active-color) !important;
+  background-color: var(--bs-btn-active-bg) !important;
+  border-color: var(--bs-btn-active-border-color) !important;
+}
+
+.btn-secondaryUNI {
+  color: var(--color-resolution-blue-100) !important;
+  background-color: var(--color-resolution-blue-400) !important;
+  border-color: var(--color-resolution-blue-600) !important;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+}
+.btn-secondaryUNI:hover {
+  color: var(--color-resolution-blue-100) !important;
+  background-color: var(--color-resolution-blue-900) !important;
+  border-color: var(--color-resolution-blue-950) !important;
+}
+.btn-secondaryUNI:active, .btn-secondaryUNI.active {
+  color: var(--bs-btn-active-color) !important;
+  background-color: var(--bs-btn-active-bg) !important;
+  border-color: var(--bs-btn-active-border-color) !important;
+}
+
+.nav-item {
+  margin: 0px 5px;
+}
+.nav-item .nav-link {
+  font-weight: 500;
+  font-size: var(--font-size-18);
+}
+.nav-item .nav-link:hover {
+  color: var(--bs-btn-active-bg);
+}/*# sourceMappingURL=buttons.css.map */
