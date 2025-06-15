@@ -2,6 +2,9 @@
 
 .videoContent{
     margin-top: 80px;
+     @media (max-width: 576px) and (max-width: 767px) {
+         margin-top: 60px;
+    }
     h4{
         color: var(--white-color);
         font-size: 18px;
@@ -12,6 +15,9 @@
         color: var(--white-color);
         font-size: 60px;
         margin: 20px 0px;
+         @media (max-width: 576px) and (max-width: 767px) {
+            font-size: 50px;
+        }
     }
     p{
         color: var(--white-color);

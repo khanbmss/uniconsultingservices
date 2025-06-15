@@ -231,6 +231,11 @@ img, svg {
   flex-direction: column;
   width: 50vw;
 }
+@media (max-width: 576px) and (max-width: 767px) {
+  .servicesSections .title {
+    width: 90vw;
+  }
+}
 .servicesSections .title h4 {
   font-size: var(--font-size-20);
   font-weight: bold;
@@ -259,6 +264,11 @@ img, svg {
   align-items: center;
   flex-direction: column;
   width: 50vw;
+}
+@media (max-width: 576px) and (max-width: 767px) {
+  .productsSections .title {
+    width: 90vw;
+  }
 }
 .productsSections .title h4 {
   font-size: var(--font-size-20);
@@ -392,12 +402,22 @@ img, svg {
   transform: rotate(-90deg) translateY(-188px);
   z-index: -1;
 }
+@media (max-width: 576px) and (max-width: 767px) {
+  .aboutUsSection .aboutusimg .aboutusimgtxt {
+    left: 30%;
+  }
+}
 .aboutUsSection .aboutusimg .aboutusimgtxt h3 {
   color: var(--secondary-color);
   font-size: 100px;
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
+}
+@media (max-width: 576px) and (max-width: 767px) {
+  .aboutUsSection .aboutusimg .aboutusimgtxt h3 {
+    font-size: 75px;
+  }
 }
 .aboutUsSection .aboutusimg .aboutusimgtxt h3::after {
   content: attr(data-text);
@@ -429,6 +449,11 @@ img, svg {
   z-index: 99;
   text-align: center;
 }
+@media (max-width: 576px) and (max-width: 767px) {
+  .aboutUsSection .aboutusimg .experienceBox {
+    padding: 10px;
+  }
+}
 .aboutUsSection .aboutusimg .experienceBox h4 {
   font-size: 80px;
   font-weight: 600;
@@ -440,10 +465,20 @@ img, svg {
   line-height: 1;
   margin-bottom: 0;
 }
+@media (max-width: 576px) and (max-width: 767px) {
+  .aboutUsSection .aboutusimg .experienceBox h4 {
+    font-size: 50px;
+  }
+}
 .aboutUsSection .aboutusimg .experienceBox p {
   font-size: 20px;
   font-weight: 600;
   font-family: var(--heading-font);
+}
+@media (max-width: 576px) and (max-width: 767px) {
+  .aboutUsSection .aboutusimg .experienceBox p {
+    font-size: 14px;
+  }
 }
 .aboutUsSection .content p.text {
   font-size: 16px;
@@ -474,9 +509,19 @@ img, svg {
   background: rgba(226, 232, 240, 0.3019607843);
   margin-bottom: 18px;
 }
+@media (max-width: 576px) and (max-width: 767px) {
+  .aboutusTitle h4.subTitle {
+    margin-top: 30px;
+  }
+}
 .aboutusTitle h2 {
   font-size: 42px;
   margin-bottom: 15px;
+}
+@media (max-width: 576px) and (max-width: 767px) {
+  .aboutusTitle h2 {
+    font-size: 32px;
+  }
 }
 
 .marqueeSections .news-ticker {
