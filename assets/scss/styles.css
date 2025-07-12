@@ -498,6 +498,79 @@ img, svg {
   font-size: 16px;
   line-height: 28px;
   margin-bottom: 20px;
+  text-align: justify;
+}
+
+.contactUsSection .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.contactUsSection .container .contactLeftBgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.contactUsSection .container .contactLeftBgs .iconsContact {
+  font-size: var(--font-size-30);
+  width: 50px;
+  margin: 10px;
+}
+.contactUsSection .container .contactLeftBgs .iconsContact .icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(54, 48, 255, 0.08);
+  margin-right: 50px;
+  border-radius: 50%;
+  color: var(--color-resolution-blue-950);
+  font-size: 20px;
+  line-height: 1.1;
+}
+.contactUsSection .container .contactLeftBgs .iconsContact .icon .icon i {
+  padding-top: 2px;
+}
+.contactUsSection .container .contactLeftBgs .iconsContact:hover .icon {
+  background: var(--color-trinidad-950);
+  color: var(--white-color);
+}
+.contactUsSection .container .contactLeftBgs .detailsContact {
+  padding: 10px;
+}
+.contactUsSection .container .contactLeftBgs .detailsContact h6 {
+  font-size: var(--font-size-20);
+}
+.contactUsSection .container .contactLeftBgs .detailsContact p {
+  font-size: var(--font-size-14);
+}
+.contactUsSection .container .contactBox01 {
+  background-color: var(--color-trinidad-100);
+}
+.contactUsSection .container .contactBox02 {
+  background-color: var(--color-trinidad-200);
+}
+.contactUsSection .container .contactBox03 {
+  background-color: var(--color-trinidad-300);
+}
+.contactUsSection .container .contactForm {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: var(--color-resolution-blue-100);
+}
+.contactUsSection .container .contactForm .formGroups {
+  display: flex;
+  flex-direction: column;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+.contactUsSection .container .contactForm .formGroups label {
+  font-size: var(--font-size-12);
+  margin: 4px 0;
 }
 
 .aboutusTitle h4 {
@@ -647,7 +720,7 @@ img, svg {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
-  color: var(--color-web-orange-500);
+  color: var(--color-resolution-blue-950);
   letter-spacing: 1px;
 }
 .footer ul.contact-info li .content p {
@@ -655,16 +728,6 @@ img, svg {
   margin-top: 4px;
   line-height: 20px;
   font-size: 16px;
-}
-.footer ul.contact-info:hover .icon i {
-  background: var(--color-web-orange-500);
-  color: var(--Neutrals950);
-}
-.footer ul.contact-info:hover .content h4 {
-  color: var(--Neutrals950);
-}
-.footer ul.contact-info:hover .content p {
-  color: var(--color-web-orange-500);
 }
 .footer .copyRight {
   display: flex;
@@ -697,4 +760,146 @@ img, svg {
 }
 .hero-section .carousel .carousel-inner .carousel-item .carousel-caption p {
   font-size: 1.25rem;
+}
+
+.services-list {
+  background: var(--Neutrals200);
+  border-radius: 4px;
+  padding: 30px 30px;
+}
+
+.serviceDetailsSections {
+  background-color: var(--color-trinidad-50);
+  border-radius: 4px;
+  padding: 20px 20px;
+}
+
+.serviceDetailsSections h4 {
+  font-size: var(--font-size-40);
+  color: var(--color-web-orange-600);
+}
+.serviceDetailsSections h4 span {
+  font-size: var(--font-size-30);
+  color: var(--color-resolution-blue-700);
+}
+
+.serviceDetailsSections h6 {
+  font-size: var(--font-size-20);
+  font-weight: bold;
+}
+
+.list-group-item {
+  margin-bottom: 5px;
+  position: relative;
+}
+.list-group-item::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -5px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid var(--color-resolution-blue-900); /* Adjust color as needed */
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: var(--color-resolution-blue-50);
+  background-color: var(--color-resolution-blue-900);
+  border-color: var(--color-resolution-blue-600);
+}
+.list-group-item.active::after {
+  border-left: 5px solid var(--color-resolution-blue-200); /* Adjust color as needed */
+}
+
+.tittleHeader {
+  height: 65vh;
+}
+.tittleHeader .sliderContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tittleHeader .sliderContent p a {
+  color: var(--white-color);
+  text-decoration: underline;
+}
+
+.servicesImg {
+  background-image: url(../images/services-header.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+
+.productsImg {
+  background-image: url(../images/products-header.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+
+.aboutusImg {
+  background-image: url(../images/aboutus-header.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+
+.contactUsImg {
+  background-image: url(../images/contactus-header.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+}
+
+.advertise {
+  margin-top: 20px;
+  background-image: url(../images/callUs.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  height: 65vh;
+  background-size: contain;
+  color: var(--white-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.advertise .icon {
+  height: 60px;
+  width: 60px;
+  line-height: 30px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary-color);
+  -webkit-transition: 0.5s -webkit-animation ripple-white-18 1s linear infinite;
+  animation: ripple-white-18 1s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.advertise h5 {
+  font-size: var(--font-size-30);
+  text-align: center;
+}
+.advertise h6 {
+  font-size: var(--font-size-20);
+}
+
+@keyframes ripple-white-18 {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+  }
 }/*# sourceMappingURL=styles.css.map */
