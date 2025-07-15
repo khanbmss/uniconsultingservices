@@ -95,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div id="products">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="aura-tab" data-bs-toggle="tab" data-bs-target="#aura"
@@ -479,9 +479,19 @@
             
             // Clear the stored tab
             localStorage.removeItem('activeTab');
+
+            // Scroll to the products section after tab activation
+            setTimeout(function() {
+                const productsSection = $('#products') || $('.nav-tabs').closest('section');
+                if (productsSection.length) {
+                    $('html, body').animate({
+                        scrollTop: productsSection.offset().top - 100
+                    }, 800);
+                }
+            }, 300);
         }
     });
-    
+
         AOS.init({
             duration: 1200,
         })

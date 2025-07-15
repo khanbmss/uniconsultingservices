@@ -84,7 +84,7 @@
             </div>
 
         <!-- Services Section -->
-        <section id="services" class="py-5 servicesSections">
+        <section  class="py-5 servicesSections">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 mx-auto">
@@ -126,7 +126,7 @@
                             <h6>+971-58877 5207</h6>
                         </div>
                     </div>
-                    <div class="col-md-8 col-lg-8">
+                    <div class="col-md-8 col-lg-8" id="services">
                         <div class="serviceDetailsSections shadow services-content">
                             <div id="DigitalTransformation" class="">
                                 <div class="serviceDetails">
@@ -500,46 +500,58 @@
             }
         });
 
-        // Check for URL parameter and activate specific service
-        const urlParams = new URLSearchParams(window.location.search);
-        const serviceParam = urlParams.get('service');
+         // Check for URL parameter and activate specific service
+    const urlParams = new URLSearchParams(window.location.search);
+    const serviceParam = urlParams.get('service');
+    
+    if (serviceParam) {
+        // Remove active class from all items
+        $('.list-group-item').removeClass('active');
         
-        if (serviceParam) {
-            // Remove active class from all items
-            $('.list-group-item').removeClass('active');
+        // Find and activate the specific service
+        const targetElement = $(`.list-group-item[data-target="${serviceParam}"]`);
+        if (targetElement.length) {
+            targetElement.addClass('active');
             
-            // Find and activate the specific service
-            const targetElement = $(`.list-group-item[data-target="${serviceParam}"]`);
-            if (targetElement.length) {
-                targetElement.addClass('active');
-                
-                // Hide all content divs and show the target one
-                $('.services-content > div').hide();
-                $('#' + serviceParam).show();
-            }
-        }
-
-        // Handle click events
-        $('.list-group-item').click(function (e) {
-            e.preventDefault();
-
-            // Remove active class from all, add to clicked
-            $('.list-group-item').removeClass('active');
-            $(this).addClass('active');
-
-            // Hide all content divs
+            // Hide all content divs and show the target one
             $('.services-content > div').hide();
-
-            // Show clicked content
-            var target = $(this).data('target');
-            $('#' + target).show();
+            $('#' + serviceParam).show();
             
-            // Update URL without page reload
-            const newUrl = new URL(window.location);
-            newUrl.searchParams.set('service', target);
-            window.history.pushState({}, '', newUrl);
-        });
+            // Scroll to the service details section
+            setTimeout(function() {
+                $('html, body').animate({
+                    scrollTop: $('#services').offset().top - 100
+                }, 800);
+            }, 100);
+        }
+    }
+
+    // Handle click events
+    $('.list-group-item').click(function (e) {
+        e.preventDefault();
+
+        // Remove active class from all, add to clicked
+        $('.list-group-item').removeClass('active');
+        $(this).addClass('active');
+
+        // Hide all content divs
+        $('.services-content > div').hide();
+
+        // Show clicked content
+        var target = $(this).data('target');
+        $('#' + target).show();
         
+        // Scroll to the service details section
+        $('html, body').animate({
+            scrollTop: $('#services').offset().top - 100
+        }, 800);
+        
+        // Update URL without page reload
+        const newUrl = new URL(window.location);
+        newUrl.searchParams.set('service', target);
+        window.history.pushState({}, '', newUrl);
+    });
+
         });
         document.addEventListener('DOMContentLoaded', function () {
             const slides = document.querySelectorAll('.slider .slide');
