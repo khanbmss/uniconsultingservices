@@ -456,6 +456,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+
+
         AOS.init({
             duration: 1200,
         })
@@ -489,6 +491,55 @@
                 var target = $(this).data('target');
                 $('#' + target).show();
             });
+
+             // Initially hide all except active
+        $('.list-group-item').each(function () {
+            var target = $(this).data('target');
+            if (!$(this).hasClass('active')) {
+                $('#' + target).hide();
+            }
+        });
+
+        // Check for URL parameter and activate specific service
+        const urlParams = new URLSearchParams(window.location.search);
+        const serviceParam = urlParams.get('service');
+        
+        if (serviceParam) {
+            // Remove active class from all items
+            $('.list-group-item').removeClass('active');
+            
+            // Find and activate the specific service
+            const targetElement = $(`.list-group-item[data-target="${serviceParam}"]`);
+            if (targetElement.length) {
+                targetElement.addClass('active');
+                
+                // Hide all content divs and show the target one
+                $('.services-content > div').hide();
+                $('#' + serviceParam).show();
+            }
+        }
+
+        // Handle click events
+        $('.list-group-item').click(function (e) {
+            e.preventDefault();
+
+            // Remove active class from all, add to clicked
+            $('.list-group-item').removeClass('active');
+            $(this).addClass('active');
+
+            // Hide all content divs
+            $('.services-content > div').hide();
+
+            // Show clicked content
+            var target = $(this).data('target');
+            $('#' + target).show();
+            
+            // Update URL without page reload
+            const newUrl = new URL(window.location);
+            newUrl.searchParams.set('service', target);
+            window.history.pushState({}, '', newUrl);
+        });
+        
         });
         document.addEventListener('DOMContentLoaded', function () {
             const slides = document.querySelectorAll('.slider .slide');
